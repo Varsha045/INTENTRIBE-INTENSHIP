@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+    {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+    width: 450px;
+    height: auto;
+  padding: 10px;
+}
+
+.title, .nav, .intro, .main, .sidebar, .footer {
+  padding: 15px;
+  margin-bottom: 10px;
+  color: white;
+  text-align: center;
+}
+
+.title {
+  background: #333;
+}
+
+.nav {
+  background: #555;
+}
+
+.intro {
+  background: #777;
+}
+
+.main-sidebar {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.main {
+  flex: 2;
+  background: #111;
+}
+
+.sidebar {
+  flex: 1;
+  background: #aaa;
+  color: black;
+}
+
+.footer {
+  background: #444;
+  margin-top: 10px;
+}
+</style>
+</body>
+<body>
+  <div class="container">
+    <div class="title">Page title</div>
+    <div class="nav">Navigation</div>
+    <div class="intro">Introduction</div>
+    <div class="main-sidebar">
+      <div class="main">Main content area</div>
+      <div class="sidebar">Sidebar</div>
+    </div>
+    <div class="footer">Footer</div>
+  </div>
+</body>
+</html>
+</html>

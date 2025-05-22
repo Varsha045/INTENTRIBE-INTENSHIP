@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+  grid-template-rows: auto auto auto auto auto;
+  grid-template-areas:
+    "header header header"
+    "nav nav nav"
+    "slide slide slide"
+    "box1 box2 box3"
+    "footer footer footer";
+  gap: 10px;
+  width: 350px;
+  padding: 10px;
+}
+
+header {
+  grid-area: header;
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 40px;
+}
+
+nav {
+  grid-area: nav;
+  background: #ccc;
+  padding: 5px;
+  text-align: center;
+}
+
+.slideshow {
+  grid-area: slide;
+  background: #666;
+  padding: 40px;
+  text-align: center;
+  color: white;
+}
+
+.content1 {
+  grid-area: box1;
+  background: #aaa;
+  padding: 20px;
+  text-align: center;
+}
+.content2 {
+  grid-area: box2;
+  background: #aaa;
+  padding: 20px;
+  text-align: center;
+}
+.content3 {
+  grid-area: box3;
+  background: #aaa;
+  padding: 20px;
+  text-align: center;
+}
+
+footer {
+  grid-area: footer;
+  background: #444;
+  color: white;
+  text-align: center;
+  padding: 5px;
+}
+    </style>
+</body>
+<body>
+  <div class="grid-container">
+    <header class="header">Header</header>
+    <nav class="nav">Navigation Bar</nav>
+    <section class="slideshow">Slideshow</section>
+    <div class="content1">Box 1</div>
+    <div class="content2">Box 2</div>
+    <div class="content3">Box 3</div>
+    <footer class="footer">Footer</footer>
+  </div>
+</body>
+</html>
+</html>
